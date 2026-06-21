@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leakpreview"
+version = "0.1.0"
+description = "Pre-share safety preview for folders"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+leakpreview = "leakpreview.cli:main"
+
+[tool.setuptools]
+packages = ["leakpreview"]
+
